@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1; 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #777; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+}
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background: rgb(241, 239, 239);
+    font-family: 'Poppins', sans-serif;    
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 50px 0 10px 0;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+}
+
+a {
+    color:rgb(156, 20, 190);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.dark a {
+    color: rgb(22, 136, 230); 
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(36, 35, 35);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+    transition: 0.3s;
+}
+
+.dark {
+    background: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+}
+
+.main-text {
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    height: 400px;
+    margin: 1%;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background: rgb(71, 71, 71);
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 30px;
+    background: rgb(130, 130, 130);
+    transition: 0.3s;
+}
+
+.dark footer {
+    background: rgb(30, 30, 30);
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+#tracker {
+    height: 50%;
+    width: 80%;
+    background: url('./assets/tracker.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#chat-app {
+    height: 50%;
+    width: 80%;
+    background: url('./assets/chat.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#whiteboard-app {
+    height: 50%;
+    width: 80%;
+    background: url('./assets/whiteboard.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#recipe-app {
+    height: 50%;
+    width: 80%;
+    background: url('./assets/recipe.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 970px) {
+
+    .main-text {
+        width: 50%;
+    }
+
+    .square {
+        width: 48%;
+        margin: 1%;
+    }
+}
